@@ -5,7 +5,6 @@ set(PROJECT_NAME MyGameEngine)
 project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME}
-    src/constants.hpp
     src/main.cpp
 )
 
