@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
 
 set(PROJECT_NAME MyGameEngine)
-
 project(${PROJECT_NAME})
 
+set(CMAKE_CXX_STANDART 17)
 add_executable(${PROJECT_NAME}
-    src/main.cpp
+	src/Renderer/ShaderProgram.hpp
+	src/Renderer/ShaderProgram.cpp
+	src/main.cpp
 )
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
